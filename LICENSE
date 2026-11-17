@@ -19,18 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-第三方组件不在本许可证覆盖范围内，各自遵循其原始许可证：
-
-  Nuked OPM   (core/opm.c, core/opm.h)      LGPL-2.1, © Nuke.YKT
-  emu2149     (core/emu2149-main/)          MIT,      © Mitsutaka Okazaki
-  numpy                                      BSD-3-Clause
-  sounddevice / PortAudio                    MIT
-  PyInstaller                                GPL-2.0 + 例外条款（仅构建工具）
-
-详见 NOTICE.md。
-
-Third-party components are NOT covered by this license and remain under
-their own terms. See NOTICE.md for details.

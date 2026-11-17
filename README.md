@@ -12,8 +12,9 @@ MIDI file on six channels is brutal, so the player stacks up to six PSGs into a
 register-write scheduler — the chip has no hardware envelope, so every ADSR step
 *is* a register write. All percussion is synthesized: the EXE ships no sample data.
 
-**License: MIT** (code). `ref/c6280.cpp` is MAME's BSD-3-Clause reference
-implementation, kept for behavioral cross-checking only and not built into the core.
+**License: MIT** (code) · `ref/c6280.cpp` is MAME's BSD-3-Clause reference
+implementation, kept for behavioral cross-checking only — see [LICENSE](LICENSE)
+and [NOTICE.md](NOTICE.md).
 
 ![PCE PSG Realtime Player](docs/screenshot_en.png)
 
@@ -82,7 +83,7 @@ diagnostics log to `selfcheck.log`.
 ```powershell
 git clone <this repo> PCEPSG-RT
 cd PCEPSG-RT
-python -m pip install numpy sounddevice
+python -m pip install -r requirements.txt
 python app_pce.py
 ```
 
@@ -370,11 +371,12 @@ behavior, multi-chip isolation, and throughput.
 
 ## License
 
-**MIT** (code). Third-party reference material keeps its own terms:
+**MIT** — see [LICENSE](LICENSE). Third-party material keeps its own terms, listed
+in [NOTICE.md](NOTICE.md):
 
 - `ref/c6280.cpp` — MAME's `c6280` device, **BSD-3-Clause**, © Charles MacDonald
   and the MAME team. Used as a behavioral reference only; the core in
-  `core/pcepsg.c` is an independent implementation.
+  `core/pcepsg.c` is an independent implementation and contains no MAME code.
 
 ## Credits
 

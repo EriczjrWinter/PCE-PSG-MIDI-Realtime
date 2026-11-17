@@ -12,7 +12,7 @@
 寄存器写入。打击乐全部是合成的，EXE 里不带任何采样数据。
 
 **许可证：MIT**（代码部分）。`ref/c6280.cpp` 是 MAME 以 BSD-3-Clause 发布的参考
-实现，只用于行为核对，不参与编译。
+实现，只用于行为核对、不参与编译——详见 [LICENSE](LICENSE) 与 [NOTICE.md](NOTICE.md)。
 
 ![PCE PSG 实时播放器](docs/screenshot_zh.png)
 
@@ -78,7 +78,7 @@ PCEPSG-RT.exe
 ```powershell
 git clone <本仓库> PCEPSG-RT
 cd PCEPSG-RT
-python -m pip install numpy sounddevice
+python -m pip install -r requirements.txt
 python app_pce.py
 ```
 
@@ -341,10 +341,10 @@ PCEPSG-RT.exe --selfcheck      # 冻结包诊断
 
 ## 许可
 
-**MIT**（代码部分）。第三方参考材料遵循各自的条款：
+**MIT** —— 见 [LICENSE](LICENSE)。第三方材料遵循各自的条款，见 [NOTICE.md](NOTICE.md)：
 
 - `ref/c6280.cpp` —— MAME 的 `c6280` 设备，**BSD-3-Clause**，© Charles MacDonald
-  与 MAME 团队。仅作行为参考；`core/pcepsg.c` 是独立实现。
+  与 MAME 团队。仅作行为参考；`core/pcepsg.c` 是独立实现，不含任何 MAME 代码。
 
 ## 致谢
 
